@@ -33,7 +33,7 @@ lane2.watch(function(err, value) { //Watch for hardware interrupts on pus$
     return;
   }
   console.log("lane2 " + value) //turn LED on or off depending on the butt$
-  request('http://10.85.9.9:5000/lanedata?lane=lane1&value='+value, {
+  request('http://10.85.9.9:5000/lanedata?lane=lane2&value='+value, {
     json: true
   }, (err, res, body) => {
     if (err) {
